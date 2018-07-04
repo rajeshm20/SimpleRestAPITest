@@ -15,6 +15,10 @@
 		183796AB20ED36E000BE31C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183796A920ED36E000BE31C5 /* LaunchScreen.storyboard */; };
 		183796B620ED36E000BE31C5 /* SimpleRestAPITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183796B520ED36E000BE31C5 /* SimpleRestAPITestTests.swift */; };
 		183796C120ED36E000BE31C5 /* SimpleRestAPITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183796C020ED36E000BE31C5 /* SimpleRestAPITestUITests.swift */; };
+		183796CF20ED3B1300BE31C5 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183796CE20ED3B1300BE31C5 /* HomeModel.swift */; };
+		183796D120ED3B1B00BE31C5 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183796D020ED3B1B00BE31C5 /* LocationModel.swift */; };
+		183796D320ED40D100BE31C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183796D220ED40D100BE31C5 /* DetailViewController.swift */; };
+		183796D620ED415600BE31C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183796D520ED415600BE31C5 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		183796BC20ED36E000BE31C5 /* SimpleRestAPITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRestAPITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		183796C020ED36E000BE31C5 /* SimpleRestAPITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRestAPITestUITests.swift; sourceTree = "<group>"; };
 		183796C220ED36E000BE31C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183796CE20ED3B1300BE31C5 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		183796D020ED3B1B00BE31C5 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		183796D220ED40D100BE31C5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		183796D520ED415600BE31C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183796D620ED415600BE31C5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,7 @@
 				183796B420ED36E000BE31C5 /* SimpleRestAPITestTests */,
 				183796BF20ED36E000BE31C5 /* SimpleRestAPITestUITests */,
 				1837969B20ED36D200BE31C5 /* Products */,
+				183796D420ED415500BE31C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +112,9 @@
 				1837969D20ED36D200BE31C5 /* AppDelegate.swift */,
 				1837969F20ED36D200BE31C5 /* ViewController.swift */,
 				183796A120ED36D200BE31C5 /* Main.storyboard */,
+				183796D220ED40D100BE31C5 /* DetailViewController.swift */,
+				183796CE20ED3B1300BE31C5 /* HomeModel.swift */,
+				183796D020ED3B1B00BE31C5 /* LocationModel.swift */,
 				183796A720ED36E000BE31C5 /* Assets.xcassets */,
 				183796A920ED36E000BE31C5 /* LaunchScreen.storyboard */,
 				183796AC20ED36E000BE31C5 /* Info.plist */,
@@ -126,6 +139,14 @@
 				183796C220ED36E000BE31C5 /* Info.plist */,
 			);
 			path = SimpleRestAPITestUITests;
+			sourceTree = "<group>";
+		};
+		183796D420ED415500BE31C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				183796D520ED415600BE31C5 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183796CF20ED3B1300BE31C5 /* HomeModel.swift in Sources */,
 				183796A620ED36D200BE31C5 /* SimpleRestAPITest.xcdatamodeld in Sources */,
 				183796A020ED36D200BE31C5 /* ViewController.swift in Sources */,
+				183796D320ED40D100BE31C5 /* DetailViewController.swift in Sources */,
+				183796D120ED3B1B00BE31C5 /* LocationModel.swift in Sources */,
 				1837969E20ED36D200BE31C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
