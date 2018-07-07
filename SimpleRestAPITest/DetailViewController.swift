@@ -36,7 +36,6 @@ class DetailViewController: UIViewController {
         //add title to the pin
         pin.title = selectedLocation!.name
         
-        
     }
 
     override func didReceiveMemoryWarning() {

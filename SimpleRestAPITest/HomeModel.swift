@@ -29,7 +29,7 @@ class HomeModel: NSObject, URLSessionDelegate {
         let defaultSession = Foundation.URLSession(configuration: URLSessionConfiguration.default)
         
         let task = defaultSession.dataTask(with: url) { (data, response, error) in
-            
+            print(data!)
             if error != nil {
                 print("Failed to download data")
             }else {
@@ -68,10 +68,10 @@ class HomeModel: NSObject, URLSessionDelegate {
                 let location = LocationModel()
                 
                 //the following insures none of the JsonElement values are nil through optional binding
-                if let name = jsonElement["Name"] as? String,
-                    let address = jsonElement["Address"] as? String,
-                    let latitude = jsonElement["Latitude"] as? String,
-                    let longitude = jsonElement["Longitude"] as? String
+                if let name = jsonElement["name"] as? String,
+                    let address = jsonElement["address"] as? String,
+                    let latitude = jsonElement["latitude"] as? String,
+                    let longitude = jsonElement["longitude"] as? String
                 {
                     
                     location.name = name
@@ -82,6 +82,8 @@ class HomeModel: NSObject, URLSessionDelegate {
                 }
                 
                 locations.add(location)
+                
+                print(locations)
                 
             }
             
